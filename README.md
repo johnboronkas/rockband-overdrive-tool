@@ -1,7 +1,7 @@
 # Rock Band Overdrive Tool
 Pass in a path to a song file, returns the optimal overdrive path in a file.
 
-Pass in a band option flag and four song files (1 per instrument) to return the optimal band overdrive path.
+Pass in a band option flag and some unique song files (1 per instrument) to return the optimal band overdrive path.
 
 Config file lists multipliers, point values, overdrive lengths, etc
 
