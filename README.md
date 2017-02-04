@@ -42,7 +42,7 @@ m 3/4 &#35; only need 3/4 now, can shorten to just m
     1 1/12
     1 1/12
 
-    &#35; total for above is 3/4, which matches our time signature of 3/4, so we're good.
+&#35; total for above is 3/4, which matches our time signature of 3/4, so we're good.
 
 m &#35; defaults to last time signature used
     ... &#35; rest of song below
