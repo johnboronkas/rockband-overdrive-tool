@@ -1,0 +1,57 @@
+guitar
+
+# Intro
+measure 4/4
+    0 1/8
+    1 5/8 sustain # blue
+    0 1/16
+    1 1/8 sustain # orange
+    0 1/16
+
+m
+    1 15/16 sustain # green
+    0 1/16
+
+m
+    1 7/8 sustain # red
+    0 1/16
+    1 1/16
+
+m
+    1 7/8 sustain # blue
+    0 1/16
+    1 1/16
+
+m
+    1 3/8 sustain # yellow
+    0 1/16
+    1 1/16
+    1 3/8 sustain # orange
+    0 1/16
+    1 1/16
+
+m
+    1 15/16 sustain # green
+    0 1/16
+
+m
+    1 7/8 sustain # red
+    0 1/16
+    1 1/16
+
+m
+    1 7/8 sustain # blue
+    0 1/16
+    1 1/16
+
+m
+    1 7/16 sustain # yellow
+    0 1/16
+    1 1/8
+    1 1/8
+    0 1/4
+
+# verse 1
+m
+    # tbc..
+
