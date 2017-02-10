@@ -8,4 +8,6 @@ Right now, we need song files for all instruments on Centuries by Fall Out Boy.
 
 We also need details of how each instrument scores points (especailly drums/guitar), collects overdrive, activates it, etc. Anything you can get. There is a wiki page for each.
 
+If you're a programmer, help is always welcomed with the algorithm.
+
 Finally, we also need "dry" FC's for each instrument on Centuries. Dry meaning no overdrive activations. This is to get a baseline for our scoring and make sure our algorithm is calculating the scores correctly.
