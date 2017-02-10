@@ -1,54 +1,11 @@
 # Rock Band Overdrive Tool
 Pass in a path to a song file, returns the optimal overdrive path in a file.
 
-Pass in a band option flag and some unique song files (1 per instrument) to return the optimal band overdrive path.
+Pass in a band option flag and some unique song files (up to 1 per instrument) to return the optimal band overdrive path (can just be bass and vox for example).
 
-Config file lists multipliers, point values, overdrive lengths, etc
+## Contributing
+Right now, we need song files for all instruments on Centuries by Fall Out Boy.
 
-Song file format just knows which instrument and the song. Each note knows how many base notes there are, how long the note is, if it is sustained (guitar/Bass only), if it grants OD and how much OD (account for sustained wammys too), if it can be activated on the note (drums and vox only (vox only during rests)). A note can be a rest.
+We also need details of how each instrument scores points (especailly drums/guitar), collects overdrive, activates it, etc. Anything you can get. There is a wiki page for each.
 
-Notes are divided into measures. Each measure has a time signature and self validates that the measure has all of its beats accounted for.
-
-Errors give the relevant line numbers and a print out of the line.
-
-Songs validate that every startOD has an endOD.
-
-Everything in the song file is NOT case sensitive.
-
-Indents are optional (just look for next measure or EOF) but things on a line need any amount of non-newline white space  between elements.
-
-&#35; this is a comment
-
-Example:
-```
-guitar
-
-measure 4/4 # the total ratio below should match this ratio (both are "1")
-    1 1/4 sustain startODx1 # the 1 stands for "1 note"
-    0 1/4 # 0 is effectively a rest
-    3 1/8 # 3 = 3 note chord
-    3 1/8
-    2 1/16
-    2 1/16
-    2 1/16
-    2 1/16
-
-m 3/4 # only need 3/4 now, can shorten to just m
-    2 1/4 sustain endOD # quarter note (still OD wammyable)
-    1 1/16 # 16th note
-    1 1/16
-    2 1/8 # 8th note (2 note chord)
-    1 1/12 # triplet
-    1 1/12
-    1 1/12
-
-# total for above is 3/4, which matches our time signature of 3/4, so we're good.
-
-m # defaults to last time signature used
-    # ... rest of song continues below ...
-```
-    
-
-Highly suggest recording a video of the song being played and using that to make the song file...
-   
-
+Finally, we also need "dry" FC's for each instrument on Centuries. Dry meaning no overdrive activations. This is to get a baseline for our scoring and make sure our algorithm is calculating the scores correctly.
