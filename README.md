@@ -1,4 +1,4 @@
-# Rock Band Overdrive Tool
+# Rock Band Overdrive Tool (rBot)
 Pass in a path to a song file, returns the optimal overdrive path in a file.
 
 Pass in a band option flag and some unique song files (up to 1 per instrument) to return the optimal band overdrive path (can just be bass and vox for example).
